@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista espera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <h1>Curso teste 2</h1> 
+        
+        Voce e: <br/>
+        1. Gestanet <br/>
+        2. Idoso   <br/>
+        3. Dificiente <br/>
+        4. Nenhuma das opcoes acima <br/>
+
+        <input id="option" type="number"> <br/>
+         <button onclick="verificar()" type="button">Verificar</button>
+
+
+       <script type="text/javascript">
+        function verificar (){
+            var op = parseInt(document.getElementById("option").value);
+            if(op===1 || op ===2 || op ===3){
+                alert("voce e preferencial");
+            }else{
+                alert("voce nae e preferencial");
+            }
+        }
+       </script>
+    </head>
+</body>
+</html>

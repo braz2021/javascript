@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste lógico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section> 
+            <div>
+                <h1>Teste</h1>
+                
+                Sua Idade: <input id="age" type="number"><br/>
+                Seu salário: <input id="salary" type="number"> <br/>
+                <button onclick="checar()">Checar</button> 
+                
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            function checar() {
+                var idade = parseInt(document.getElementById("age").value);
+                var salario = parseFloat(document.getElementById("salary").value);
+
+
+                if (idade > 17 && salario > 2000) {
+                    alert("Você está apto a participar do consórcio");
+                } else {
+                    
+                    alert("Você NÃO está apto a participar do consórcio");
+                }
+            }
+        </script>
+    </header>
+</body>
+</html>

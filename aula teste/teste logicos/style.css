@@ -1,0 +1,39 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* estilo para os campos entrada e botao*/
+section{
+    text-align: center;
+}
+
+/* estilo para entrada e botoes */
+
+button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* estilo msg alerta */
+.alert-success{
+    background-color: #28a745;
+    color: #fff;
+}
+/* Estilo para a mensagem de sucesso */
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+}
+/* Estilo para a mensagem de erro */
+.alert-error {
+    background-color: #dc3545;
+    color: #fff;
+}

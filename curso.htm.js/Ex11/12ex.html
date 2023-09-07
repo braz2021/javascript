@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cidadania</title>
+</head>
+<body>
+    <h1>Selecione sua Nacionalidade:</h1>
+    <form id="nacionalidadeForm">
+        <label for="nacionalidade">Nacionalidade:</label>
+        <select id="nacionalidade" name="nacionalidade">
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="espanha">Espanha</option>
+            <option value="argentina">Argentina</option>
+            <!-- Adicione outras opções de nacionalidade conforme necessário -->
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        // Função para lidar com o envio do formulário
+        document.getElementById("nacionalidadeForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio do formulário padrão
+
+            // Obter o valor selecionado na lista suspensa
+            var selectElement = document.getElementById("nacionalidade");
+            var selectedValue = selectElement.value;
+
+            // Realizar a verificação com base na nacionalidade selecionada
+            if (selectedValue === "brasil") {
+                alert("Você selecionou a nacionalidade Brasil.");
+            } else if (selectedValue === "portugal") {
+                alert("Você selecionou a nacionalidade Portugal.");
+            } else if (selectedValue === "espanha") {
+                alert("Você selecionou a nacionalidade Espanha.");
+            } else if (selectedValue === "argentina") {
+                alert("Você selecionou a nacionalidade Argentina.");
+            } else {
+                
+                alert("Nacionalidade não reconhecida.");
+
+            }
+           
+        });
+    </script>
+
+</body>
+</html>
